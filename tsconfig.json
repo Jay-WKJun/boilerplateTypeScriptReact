@@ -1,0 +1,18 @@
+{
+  "include": ["src/*"],
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess":true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    /* for Dev */
+    // "sourceMap": true,
+    // "traceResolution": true,
+    "extendedDiagnostics": true
+  },
+}
