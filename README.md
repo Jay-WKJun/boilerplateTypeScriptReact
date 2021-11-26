@@ -6,7 +6,7 @@ Wepack, Typescript, React로 이루어진 보일러 플레이트. CRA를 사용�
 
 개발자잖아?
 
-## tsconfig 설명
+## tsconfig
 
 noImplicitAny: any를 설정시, 해당 변수의 타입이 모호해지기 때문에 정적 타입을 명확하게 해주는 TypeScript의 장점이 없어지게 됨으로 any 타입은 하지 않는 것으로!
 
@@ -31,3 +31,17 @@ noUnusedParameters: 쓸데없는 파라미터 또한, 메모리 낭비 및 코�
 sourceMap: 난독화 되는 코드를 막아줘서 브라우저에서도 디버깅할 수 있게 해준다.
 
 extendedDiagnostics: compile시에 시간이 얼마나 걸리는지 측정해준다.
+
+## babel config
+
+babel-loader 대신에 ts-loader와 @babel/preset-typescript를 사용하면 추가적인 loader없이 js와 ts 동시에 babel을 적용시킬 수 있다고 한다.
+
+따라서 .babelrc에 @babel/preset-typescript를 preset으로 등록했다.
+
+[ref: ts-loader](https://webpack.js.org/guides/typescript/#loader)
+
+## sourceMap 설정
+
+ts의 sourceMap 설정과 웹팩의 devtool: 'inline-source-map'로 디버깅이 가능하다.
+
+[webpack과 ts의 sourceMap 설정으로 Debugging하는 방법](https://webpack.js.org/guides/typescript/#source-maps)

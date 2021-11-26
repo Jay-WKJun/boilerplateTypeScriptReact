@@ -1,6 +1,7 @@
 {
   "include": ["src/*"],
   "compilerOptions": {
+    "noEmit": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "noFallthroughCasesInSwitch": true,
@@ -10,9 +11,18 @@
     "noUncheckedIndexedAccess":true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "esModuleInterop": true,
+    "target": "ES5",
+    "jsx": "react",
     /* for Dev */
     // "sourceMap": true,
     // "traceResolution": true,
-    "extendedDiagnostics": true
+    "extendedDiagnostics": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": [
+        "node_modules/*",
+      ]
+    }
   },
 }
