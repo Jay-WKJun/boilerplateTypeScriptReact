@@ -14,15 +14,15 @@
     "esModuleInterop": true,
     "target": "ES5",
     "jsx": "react",
-    /* for Dev */
-    // "sourceMap": true,
-    // "traceResolution": true,
-    "extendedDiagnostics": true,
     "baseUrl": "./",
     "paths": {
       "*": [
         "node_modules/*",
       ]
-    }
+    },
+    /* for Dev */
+    // "sourceMap": true,
+    // "traceResolution": true,
+    "extendedDiagnostics": true,
   },
 }
