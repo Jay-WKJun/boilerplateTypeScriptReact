@@ -10,7 +10,7 @@ module.exports = {
     filename: "bundle.js",
   },
   resolve: {
-    extendsions: [".ts", ".tsx"]
+    extensions: ['.js', '.jsx', ".ts", ".tsx"],
   },
   module: {
     rules: [
@@ -35,7 +35,6 @@ module.exports = {
   },
   devServer: {
     port: 3000,
-    watchContentBase: true,
   },
   plugins: [
     new HtmlWebpackPlugin({ template: path.resolve(__dirname, "src", "index.html") }),
