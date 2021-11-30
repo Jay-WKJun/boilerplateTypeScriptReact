@@ -2,9 +2,9 @@ import React from 'react';
 
 function App() {
   return (
-    <div>
-      asdfasdf
-    </div>
+    <h1>
+      All configured!! Happy Hacking!!
+    </h1>
   );
 }
 
