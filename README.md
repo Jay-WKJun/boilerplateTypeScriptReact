@@ -103,3 +103,25 @@ MiniCssExtractPlugin의 장점은 chunk 파일을 통해 caching이 가능하다
 개발을 위해 devServer 설정을 둡니다.
 
 localhost://3000에서 실행되며, 자동으로 브라우저가 열립니다.
+
+# ESLint
+
+간단한 린트를 추가했습니다.
+
+## JavaScript 세팅
+
+airbnb-base 플러그인을 사용했습니다.
+
+## React
+
+eslint-plugin-react에서 제공하는 기본 설정을 사용합니다.
+
+## TypeScript
+
+@typescript-eslint에서 제공하는 기본 설정을 사용합니다.
+
+## 그 외 custom
+
+@typescript-eslint/no-var-requires를 제외합니다. webpack config에서 commonJS의 require를 있는 그대로의 방식으로 사용하기 위해서입니다.
+
+extensions를 제외합니다. webpack에서 설정한 resolve 옵션으로 몇가지 확장자를 무시할 수 있도록 했는데, 이를 활용하기 위해서입니다.
