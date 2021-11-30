@@ -2,7 +2,7 @@
 
 Wepack, Typescript, React로 이루어진 보일러 플레이트. 🍳
 
-CRA 대용이며 config를 공부할 목적으로 만들었습니다.
+CRA 대용이며 여러 config를 공부할 목적으로 만들었습니다.
 
 ## tsconfig
 
@@ -86,7 +86,7 @@ css와 scss가 가능하도록 했습니다.
 
 ### MiniCssExtractPlugin
 
-style-loader 대신에 MiniCssExtractPlugin을 사용했습니다.
+style-loader 대신에 [MiniCssExtractPlugin](https://webpack.js.org/plugins/mini-css-extract-plugin/)을 사용했습니다.
 
 MiniCssExtractPlugin을 통해 javascript bundle 파일에 style이 모두 들어가는 것이 아니라,
 
@@ -102,7 +102,7 @@ MiniCssExtractPlugin의 장점은 chunk 파일을 통해 caching이 가능하다
 
 개발을 위해 devServer 설정을 둡니다.
 
-localhost://3000에서 실행되며, 자동으로 브라우저가 열립니다.
+**localhost://3000**에서 실행되며, **자동으로 브라우저가 열립니다.**
 
 # ESLint
 
@@ -110,17 +110,21 @@ localhost://3000에서 실행되며, 자동으로 브라우저가 열립니다.
 
 ## JavaScript 세팅
 
-airbnb-base 플러그인을 사용했습니다.
+[airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base) 플러그인을 사용했습니다.
+
+[eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)와는 다르게 React ESLint config를 포함하지 않습니다.
 
 ## React
 
-eslint-plugin-react에서 제공하는 기본 설정을 사용합니다.
+[eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react#configuration)에서 제공하는 기본 설정을 사용합니다.
 
 ## TypeScript
 
-@typescript-eslint에서 제공하는 기본 설정을 사용합니다.
+[@typescript-eslint](https://eslint.org/blog/2019/01/future-typescript-eslint)에서 제공하는 기본 설정을 사용합니다.
 
-## 그 외 custom
+[ESLint configure blog ref](https://flamingotiger.github.io/javascript/eslint-setup/)
+
+## 그 외 custom rule
 
 @typescript-eslint/no-var-requires를 제외합니다. webpack config에서 commonJS의 require를 있는 그대로의 방식으로 사용하기 위해서입니다.
 
